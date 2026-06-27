@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Award, Backpack, Package, ScrollText, ChevronRight, BookOpen, Shield, Crosshair, BookMarked } from "lucide-react";
+import { Award, Backpack, Package, ScrollText, ChevronRight, BookOpen, Shield, Crosshair } from "lucide-react";
 import { AppShell, TopBar } from "@/components/AppShell";
 import { Card, SectionHeader } from "@/components/ui-bits";
 import { useStore } from "@/lib/store";
@@ -21,12 +21,6 @@ function LernenIndex() {
   const viewedEquipment = useStore((s) => s.viewedEquipment);
 
   const topics = [
-    {
-      to: "/lernen/themen",
-      icon: BookMarked,
-      title: "Themen der AGA",
-      hint: "Recht, Sanitätsdienst, Waffen, Gefechtsdienst, Fernmelde, Innere Führung",
-    },
     {
       to: "/lernen/dienstgrade",
       icon: Award,
